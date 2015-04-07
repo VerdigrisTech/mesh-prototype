@@ -11,11 +11,15 @@
 @import "_bootstrap-includes";    // Bootstrap core
 
 #subnavigation {
-
   .pagination {
     margin: 0;
   }
+}
 
+#task-history {
+  p {
+    padding: 6px 12px;
+  }
 }
 
 /* ==========================================================================
