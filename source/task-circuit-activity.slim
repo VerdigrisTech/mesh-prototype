@@ -1,0 +1,42 @@
+---
+title: Task Circuit Activity
+meta_description: Monitor circuit(s) for activity
+---
+
+== _partial "subtask"
+
+.row
+  .col-xs-2.col-sm-1.text-center
+    h3
+      span.label.label-info
+        i.fa.fa-refresh
+  .col-xs-10.col-sm-11
+    h3 2nd floor lighting circuits active after close
+    p #380, Opened 12 hours ago, Assigned
+    span.label.label-default Operations
+
+hr
+
+.row
+  .col-xs-12
+    p These panels were recently active:
+    pre 3/30  @10:00pm    p2c42, p2c44, p2c46
+      3/29  @11:15pm    p2c42, p2c44
+      3/28  @8:15pm     p2c42, p2c44
+      3/28  @3:00am     p2c42
+      3/27  @11:00pm    p2c42
+
+.row
+  .col-xs-12.text-right
+    button.btn.btn-default Assign
+    button.btn.btn-default Change Status
+
+hr
+
+.row#task-history
+  .col-xs-12
+    p.bg-success Mike assigned task to John today
+    p.bg-primary John commented today
+      <br /> I’m going to check the lighting controls today and see if we still have the issue
+
+== _partial "comment"
