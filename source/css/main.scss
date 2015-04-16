@@ -22,6 +22,16 @@
   }
 }
 
+.btn + .btn {
+  margin-left: 5px !important;
+  margin-bottom: 0;
+}
+
+.row > .form-group:before, .row > .form-group:after {
+  content: " ";
+  display: table;
+}
+
 /* ==========================================================================
  * Media queries to target specific breakpoints
 /* ==========================================================================

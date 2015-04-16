@@ -1,0 +1,31 @@
+.row
+  .col-xs-12.text-right
+    .btn-group
+      ul.dropdown-menu role="menu"
+        li
+          a href="#" @teammember1
+        li
+          a href="#" @teammember2
+        li
+          a href="#" @teammember3
+        li
+          a href="#" @teammember4
+        li
+          a href="#" Add
+      button.btn.btn-default.dropdown-toggle data-toggle="dropdown" aria-expanded="false" Assignee
+      button.btn.btn-warning data-toggle="modal" data-target="#taskModal" Close Task
+
+.row
+
+  .modal.fade#taskModal tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close type="button" data-dismiss="modal" aria-label="Close"
+            span aria-hidden="true" &times;
+          h4 Close Task
+        .modal-body
+          p Are you sure you want to close this task.
+        .modal-footer
+          button.btn.btn-default data-dismiss="modal" Cancel
+          a.btn.btn-danger href="/tracker" Close

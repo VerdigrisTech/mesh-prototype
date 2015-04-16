@@ -1,7 +1,8 @@
 .row
   .col-xs-9
     button.btn.btn-default #{current_page.data.meta_description}
+    button.btn.btn-default Operations
   .col-xs-3.text-right
-    button.btn.btn-success Edit
+    a.btn.btn-success href="/#{current_page.data.edit_link}" Edit
 
 hr

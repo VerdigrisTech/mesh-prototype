@@ -1,6 +1,7 @@
 ---
 title: Task Circuit Activity
 meta_description: Monitor circuit(s) for activity
+edit_link: routine-circuit-activity
 ---
 
 == _partial "subtask"
@@ -12,8 +13,8 @@ meta_description: Monitor circuit(s) for activity
         i.fa.fa-refresh
   .col-xs-10.col-sm-11
     h3 2nd floor lighting circuits active after close
-    p #380, Opened 12 hours ago, Assigned
-    span.label.label-default Operations
+    p #380, Opened 12 hours ago
+    == _partial "assignee"
 
 hr
 
@@ -27,15 +28,18 @@ hr
       3/27  @11:00pm    p2c42
 
 .row
-  .col-xs-12.text-right
-    button.btn.btn-default Assign
-    button.btn.btn-default Change Status
+  .col-xs-12
+    div.alert.alert-warning
+      span.label.label-warning Recommendation
+      span   We recommend adding a timer
+
+== _partial "taskmanagement"
 
 hr
 
 .row#task-history
   .col-xs-12
-    p.bg-success Mike assigned task to John today
+    p.bg-success Assigned task to @teammember1, @teammember2 today
     p.bg-primary John commented today
       <br /> I’m going to check the lighting controls today and see if we still have the issue
 

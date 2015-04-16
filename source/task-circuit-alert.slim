@@ -1,0 +1,41 @@
+---
+title: Task Circuit Alert
+meta_description: Circuit breaker trip alert
+edit_link: routine-circuit-alert
+---
+
+== _partial "subtask"
+
+.row
+  .col-xs-2.col-sm-1.text-center
+    h3
+      span.label.label-danger
+        i.fa.fa-exclamation
+  .col-xs-10.col-sm-11
+    h3 Circuit breaker trip alert
+    p #379, Opened 12 hours ago, In Review
+    == _partial "assignee"
+
+hr
+
+.row
+  .col-xs-12
+    p These circuits recently tripped:
+    pre 3/29  @10:00am    p2c42, p2c44, p2c46
+      Current Status Inactive
+
+.row
+  .col-xs-12
+    div.alert.alert-warning
+      span.label.label-warning Recommendation
+      span   Use analytics to determine which devices caused the circuit to trip 
+
+== _partial "taskmanagement"
+
+hr
+
+.row#task-history
+  .col-xs-12
+    p.bg-success Assigned task to @teammember1, @teammember2 today
+
+== _partial "comment"

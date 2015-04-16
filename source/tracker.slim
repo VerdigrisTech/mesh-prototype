@@ -12,9 +12,13 @@ section#subnavigation role="sub"
       span.label.label-info
         i.fa.fa-refresh
   .col-xs-10
-    h3 2nd floor lighting circuits active after close
+    a href="#{url_t_c_activity}"
+      h3 2nd floor lighting circuits active after close
     p #380, Opened 12 hours ago, Assigned
-    span.label.label-default Operations
+    span.label.label-primary Assigned
+    span  @teammember1, @teammember2
+
+hr
 
 .row
   .col-xs-2.text-center
@@ -22,9 +26,13 @@ section#subnavigation role="sub"
       span.label.label-danger
         i.fa.fa-exclamation
   .col-xs-10
-    h3 Circuit breaker trip alert on p2c16
+    a href="#{url_t_c_alert}"
+      h3 Circuit breaker trip alert on p2c16
     p #379, Opened 16 hours ago, In Review
-    span.label.label-default Operations
+    span.label.label-primary Assigned
+    span  @teammember1, @teammember2
+
+hr
 
 .row
   .col-xs-2.text-center
@@ -33,9 +41,12 @@ section#subnavigation role="sub"
         .fa.fa-exclamation
     span.label.label-warning
   .col-xs-10
-    h3 Main refrigerators below operating threshold
+    a href="#{url_t_c_threshold}"
+      h3 Main refrigerators below operating threshold
     p #378, Opened 16 hours ago
-    span.label.label-default Operations
+    span.label.label-warning Unassigned
+
+hr
 
 .row
   .col-xs-2.text-center
@@ -43,9 +54,12 @@ section#subnavigation role="sub"
       span.label.label-info
         .fa.fa-refresh
   .col-xs-10
-    h3 Building activity out of sync with operating hours
+    a href="#{url_t_b_baseline}"
+      h3 Building activity out of sync with baseline
     p #377, Opened 2 days ago
-    span.label.label-default Operations
+    span.label.label-warning Unassigned
+
+hr
 
 .row
   .col-xs-2.text-center
@@ -55,7 +69,9 @@ section#subnavigation role="sub"
   .col-xs-10
     h3 Weekly highest load demand identified
     p #376, Opened 3 days ago, In Review
-    span.label.label-default Operations
+    span.label.label-warning Unassigned
+
+hr
 
 p
 

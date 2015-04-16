@@ -1,13 +1,16 @@
 ---
 title: Routine Circuit Trip
-meta_description: Has a list of tasks
+meta_description: Circuit breaker trip alert
 ---
+
+== _partial "subtask"
+
 .row
   .col-xs-12
     h4 Select Panels to Monitor for Circuit Breaks
 
 .row
-  .col-xs-9.text-left
+  .col-xs-10.text-left
     select.form-control
       option All Panels
       option Panel A
@@ -15,7 +18,7 @@ meta_description: Has a list of tasks
       option Panel C
       option Panel D
 
-  .col-xs-3.text-right
+  .col-xs-2.text-right
     button.btn.btn-default +
 
 .row
@@ -23,7 +26,7 @@ meta_description: Has a list of tasks
     h4 Set Priority
 
 .row
-  .col-xs-6.text-left
+  .col-xs-10.text-left
     select.form-control
       option High
       option Medium
@@ -41,26 +44,23 @@ meta_description: Has a list of tasks
       option SMS
   .col-xs-6.text-left
     form.form-group
-      input type="email" placeholder="Enter Email"
+      input.form-control type="email" placeholder="Enter Email"
   .col-xs-2.text-right
     button.btn.btn-default -
 
 .row
   .col-xs-4.text-left
     select.form-control
-      option Email
       option SMS
+      option Email
   .col-xs-6.text-left
     form.form-group
-      input type="tel" placeholder="+1-555-555-5555"
+      input.form-control type="tel" placeholder="+1-555-555-5555"
   .col-xs-2.text-right
     button.btn.btn-default +
 
 .row
   .col-xs-6
-  .col-xs-3.text-center
-    button.btn.btn-danger type="button"
-      | Delete
-  .col-xs-3.text-center
-    button.btn.btn-success type="button"
-      | Save
+  .col-xs-6.text-right
+    button.btn.btn-danger type="button" Delete
+    button.btn.btn-success type="button" Save

@@ -21,8 +21,16 @@ set :fonts_dir,             'fonts'
 
 # Sitemap URLs (use trailing slashes)
 set :url_sample,            "/sample/"
-set :url_tracker,            "/tracker/"
+set :url_tracker,           "/tracker/"
 # Place additional URLs here...
+set :routine_circuit_activity,      "/routine-circuit-activity/"
+set :url_r_c_trip,          "/routine-circuit-alert/"
+set :url_r_c_threshold,     "/routine-circuit-threshold/"
+set :url_t_c_activity,      "/task-circuit-activity/"
+set :url_t_c_alert,         "/task-circuit-alert/"
+set :url_t_c_threshold,     "/task-circuit-threshold/"
+set :url_t_b_baseline,      "/task-building-baseline/"
+
 
 # Sitemap XML
 require "builder"

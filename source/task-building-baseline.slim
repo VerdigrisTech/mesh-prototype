@@ -1,0 +1,43 @@
+---
+title: Building Baseline
+meta_description: Building Baseline Tracker
+edit_link:
+---
+
+== _partial "subtask"
+
+.row
+  .col-xs-2.col-sm-1.text-center
+    h3
+      span.label.label-warning
+        i.fa.fa-exclamation
+  .col-xs-10.col-sm-11
+    h3 Building activity out of sync with operating hours
+    p #377, Opened 2 days ago
+    span.label.label-warning Unassigned
+
+hr
+
+.row
+  .col-xs-12
+    p Here is your historical baseline compared to your usage:
+
+.row
+  .col-xs-12.col-md-6
+    img.img-responsive src="/img/graph.png"
+
+.row
+  .col-xs-12
+    div.alert.alert-warning
+      span.label.label-warning Recommendation
+      span   Speak with our energy engineers to see how you can improve
+
+== _partial "taskmanagement"
+
+hr
+
+.row#task-history
+  .col-xs-12
+    p.bg-warning No status or member assigned
+
+== _partial "comment"
