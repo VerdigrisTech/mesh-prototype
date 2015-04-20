@@ -32,6 +32,18 @@
   display: table;
 }
 
+.callout {
+  border-top-width: 3px;
+}
+
+.callout-warning {
+  border-top-color: $brand-warning;
+}
+
+.callout-danger {
+  border-top-color: $brand-danger;
+}
+
 /* ==========================================================================
  * Media queries to target specific breakpoints
 /* ==========================================================================

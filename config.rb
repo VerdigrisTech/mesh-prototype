@@ -20,17 +20,19 @@ set :images_dir,            'img'
 set :fonts_dir,             'fonts'
 
 # Sitemap URLs (use trailing slashes)
-set :url_sample,            "/sample/"
-set :url_tracker,           "/tracker/"
+set :url_summary,           "/summary/"
+set :url_tracker,           "/"
+set :url_new,               "/new/"
+set :url_routines,          "/routines/"
 # Place additional URLs here...
-set :routine_circuit_activity,      "/routine-circuit-activity/"
+set :url_r_c_activity,      "/routine-circuit-activity/"
 set :url_r_c_trip,          "/routine-circuit-alert/"
 set :url_r_c_threshold,     "/routine-circuit-threshold/"
 set :url_t_c_activity,      "/task-circuit-activity/"
 set :url_t_c_alert,         "/task-circuit-alert/"
 set :url_t_c_threshold,     "/task-circuit-threshold/"
 set :url_t_b_baseline,      "/task-building-baseline/"
-
+set :url_t_b_demand,      "/task-building-demand/"
 
 # Sitemap XML
 require "builder"
