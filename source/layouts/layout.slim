@@ -29,11 +29,12 @@ html.no-js
     #wrap
       header role="banner"
         == _partial "navigation"
+        == _partial "subnav"
 
       main role="document"
         .container
           == yield
-      
+
       footer.content-info role="content-info"
         hr
         .container

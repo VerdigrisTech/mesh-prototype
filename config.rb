@@ -21,9 +21,9 @@ set :fonts_dir,             'fonts'
 
 # Sitemap URLs (use trailing slashes)
 set :url_summary,           "/summary/"
-set :url_tracker,           "/"
+set :url_feed,           "/"
 set :url_new,               "/new/"
-set :url_routines,          "/routines/"
+set :url_trackers,          "/trackers/"
 # Place additional URLs here...
 set :url_r_c_activity,      "/routine-circuit-activity/"
 set :url_r_c_trip,          "/routine-circuit-alert/"

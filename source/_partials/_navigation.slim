@@ -1,5 +1,5 @@
 nav.navbar.navbar-default
-  .container-fluid
+  .container
     .navbar-header
       button.navbar-toggle data-target="#primary-navigation" data-toggle="collapse" type="button"
         span.sr-only
@@ -7,11 +7,11 @@ nav.navbar.navbar-default
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand href="/" title="#{site_title}" #{site_title}
+      a.navbar-brand href="/settings" title="#{site_title}" Company
 
     .collapse.navbar-collapse#primary-navigation
       ul.nav.navbar-nav
-        =nav_li "Tracker", "#{url_tracker}"
-        =nav_li "Routines", "#{url_routines}"
+        =nav_li "Feed", "#{url_feed}"
+        =nav_li "Trackers", "#{url_trackers}"
         =nav_li "Summary", "#{url_summary}"
         =nav_li "New", "#{url_new}"

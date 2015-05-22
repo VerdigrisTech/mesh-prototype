@@ -1,0 +1,11 @@
+#subnav
+  .container
+    .row
+      .col-sm-6.col-xs-9
+        h4 #{current_page.data.meta_title}
+      - if current_page.data.edit_link
+        .col-sm-6.col-xs-3.text-right
+          a.btn.btn-default.btn-xs href="/#{current_page.data.edit_link}" Edit
+      - else
+        .col-sm-6.text-right.hidden-xs
+          h5 #{current_page.data.meta_description}
