@@ -1,19 +1,19 @@
 .row
   .col-xs-12.text-right
-    .btn-group
-      ul.dropdown-menu role="menu"
-        li
-          a href="#" @teammember1
-        li
-          a href="#" @teammember2
-        li
-          a href="#" @teammember3
-        li
-          a href="#" @teammember4
-        li
-          a href="#" Add
-      button.btn.btn-default.dropdown-toggle data-toggle="dropdown" aria-expanded="false" Assignee
-      button.btn.btn-warning data-toggle="modal" data-target="#taskModal" Close Task
+    / .btn-group
+    /   ul.dropdown-menu role="menu"
+    /     li
+    /       a href="#" @teammember1
+    /     li
+    /       a href="#" @teammember2
+    /     li
+    /       a href="#" @teammember3
+    /     li
+    /       a href="#" @teammember4
+    /     li
+    /       a href="#" Add
+    /   button.btn.btn-default.dropdown-toggle data-toggle="dropdown" aria-expanded="false" Assignee
+    button.btn.btn-warning data-toggle="modal" data-target="#taskModal" Close Task
 
 .row
 
@@ -28,4 +28,4 @@
           p Are you sure you want to close this task.
         .modal-footer
           button.btn.btn-default data-dismiss="modal" Cancel
-          a.btn.btn-danger href="/tracker" Close
+          a.btn.btn-danger href="/" Close

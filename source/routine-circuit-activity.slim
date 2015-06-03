@@ -1,82 +1,107 @@
 ---
-title: Routine Circuit Activity
+title: Circuit Activity Monitor
+meta_title: Recipe
 meta_description: Monitor circuit(s) for activity
 edit_link:
 ---
 
-== _partial "subtask"
+/ == _partial "subtask"
 
 .row
   .col-xs-12
-    h4 Select Task Title
+    .alert.alert-success.alert-dismissible role="alert"
+      button.close type="button" data-dismiss="alert" aria-label="Close"
+        span aria-hidden="true" &times;
+      | Here you can create a tracker to monitor circuits in your facility, eg. get notified is key equipment turns off unexpectedly
+
+.row
+  .col-xs-12
+    h4 Select a title.
 
 .row
   .form-group
     .col-xs-12.text-left
-      input.form-control type="text" placeholder="2nd floor lighting circuits active after close"
+      input.form-control type="text" placeholder="Kitchen lights on at night"
 
 .row
   .col-xs-12
-    h4 Select Circuits to Monitor
+    h5 SUMMARY
+    p Watch 3 circuits for activity above 10kW from 6pm to 6am, daily.
 
-.row
-  .form-group
-    .col-xs-5.text-left
-      select.form-control
-        option Panel A
-        option Panel B
-        option Panel C
-        option Panel D
-    .col-xs-5.text-left
-      select.form-control
-        option Circuit 1
-        option Circuit 2
-        option Circuit 3
-        option Circuit 4
-    .col-xs-2.text-right
-      button.btn.btn-default –
-
-.row
-  .form-group
-    .col-xs-5.text-left
-      select.form-control
-        option Panel A
-        option Panel B
-        option Panel C
-        option Panel D
-    .col-xs-5.text-left
-      select.form-control
-        option Circuit 1
-        option Circuit 2
-        option Circuit 3
-        option Circuit 4
-    .col-xs-2.text-right
-      button.btn.btn-default –
-
-.row
-  .form-group
-    .col-xs-5.text-left
-      select.form-control
-        option Panel A
-        option Panel B
-        option Panel C
-        option Panel D
-    .col-xs-5.text-left
-      select.form-control
-        option Circuit 1
-        option Circuit 2
-        option Circuit 3
-        option Circuit 4
-    .col-xs-2.text-right
-      button.btn.btn-default +
+p
+hr
 
 .row
   .col-xs-12
-    h4 Select Time to Monitor
+    h4 Which panels and circuits do you want to track?
+
+p
 
 .row
   .form-group
-    .col-xs-4.text-left
+    .col-xs-6.text-left
+      select.form-control
+        option Panel A
+        option Panel B
+        option Panel C
+        option Panel D
+    .col-xs-6.text-left
+      select.form-control
+        option Circuit 1
+        option Circuit 2
+        option Circuit 3
+        option Circuit 4
+
+.row
+  .col-xs-12
+    span.label.label-info HK-4… | 30-LED | X
+    span.label.label-info HK-4… | 31-LED | X
+    span.label.label-info HK-4… | 32-LED | X
+
+p
+
+.row
+  .col-xs-12
+    h4 What circuit threshold do you want to monitor?
+
+.row
+  .form-group
+    .col-xs-6.text-left
+      select.form-control
+        option Above
+        option Below
+    .col-xs-6.text-left
+      .input-group
+        input.form-control type="text" placeholder="10"
+        .input-group-addon W
+
+p
+
+.row
+  .col-xs-12
+    h4 When do you want to track?
+
+.row
+  .form-group
+    .col-xs-12
+      label.checkbox-inline
+        input type="checkbox" M
+      label.checkbox-inline
+        input type="checkbox" Tu
+      label.checkbox-inline
+        input type="checkbox" W
+      label.checkbox-inline
+        input type="checkbox" Th
+      label.checkbox-inline
+        input type="checkbox" F
+      label.checkbox-inline
+        input type="checkbox" Sa
+      label.checkbox-inline
+        input type="checkbox" Su
+
+.row
+  .form-group
+    .col-xs-5.text-left
       select.form-control
         option 6:00 AM
         option 9:00 AM
@@ -84,7 +109,9 @@ edit_link:
         option 3:00 PM
         option 6:00 PM
         option 9:00 PM
-    .col-xs-4.text-left
+    .col-xs-2.text-center
+      h5 to
+    .col-xs-5.text-left
       select.form-control
         option 6:00 AM
         option 9:00 AM
@@ -92,19 +119,12 @@ edit_link:
         option 3:00 PM
         option 6:00 PM
         option 9:00 PM
-    .col-xs-2.text-left
-      select.form-control
-        option Daily
-        option Weekday
-        option Weekend
-        option Mon
-        option Tue
-        option Wed
-        option Thu
-        option Fri
-        option Sat
-        option Sun
-    .col-xs-2.text-right
-      button.btn.btn-default +
 
-== _partial "routinetasks"
+hr
+
+.row
+  .col-xs-12.text-right
+    button.btn.btn-warning Delete
+    button.btn.btn-success Save
+
+/ == _partial "routinetasks"

@@ -1,44 +1,37 @@
 ---
 title: Task Circuit Activity
-meta_title: Monitor circuit(s) for activity
+meta_title: Fault
 edit_link: routine-circuit-activity
 ---
 
 .row
-  .col-xs-2.col-sm-1.text-center
-    h3
-      span.label.label-info
-        i.fa.fa-refresh
-  .col-xs-10.col-sm-11
-    h3 2nd floor lighting circuits active after close
-    p #380, Opened 12 hours ago
-    == _partial "assignee"
+  .col-xs-12
+    h3 Kitchen lights on at night
+    p #380, Triggered 12 hours ago
+    / == _partial "assignee"
 
 hr
 
 .row
   .col-xs-12
-    p These panels were recently active:
-    pre 3/30  @10:00pm    p2c42, p2c44, p2c46
-      3/29  @11:15pm    p2c42, p2c44
-      3/28  @8:15pm     p2c42, p2c44
-      3/28  @3:00am     p2c42
-      3/27  @11:00pm    p2c42
+    div.alert.alert-info
+      | The circuit—
+      span.label.label-info HK-4… | 30-LED | X
+      | was at 15kW, 5kW above threshold at 9PM
 
-.row
-  .col-xs-12
-    div.alert.alert-warning
-      span.label.label-warning Recommendation
-      span   We recommend adding a timer
+/ .row
+/   .col-xs-12
+/     div.alert.alert-warning
+/       p We recommend adding a timer
 
 == _partial "taskmanagement"
 
-hr
-
-.row#task-history
-  .col-xs-12
-    p.bg-success Assigned task to @teammember1, @teammember2 today
-    p.bg-primary John commented today
-      <br /> I’m going to check the lighting controls today and see if we still have the issue
-
-== _partial "comment"
+/ hr
+/
+/ .row#task-history
+/   .col-xs-12
+/     p.bg-success Assigned task to @teammember1, @teammember2 today
+/     p.bg-primary John commented today
+/       <br /> I’m going to check the lighting controls today and see if we still have the issue
+/
+/ == _partial "comment"
